@@ -1,0 +1,87 @@
+import { BodyPartCategory } from "../types/health";
+import type { DashboardData } from "../types/health";
+
+export const mockDashboardData: DashboardData = {
+  metrics: [
+    {
+      id: "bmi",
+      label: "BMI",
+      value: 22.5,
+      unit: "kg/m²",
+      category: BodyPartCategory.metabolic,
+      bodyPart: "body",
+    },
+    {
+      id: "bp-systolic",
+      label: "Systolic Blood Pressure",
+      value: 118,
+      unit: "mmHg",
+      category: BodyPartCategory.cardiovascular,
+      bodyPart: "heart",
+    },
+    {
+      id: "bp-diastolic",
+      label: "Diastolic Blood Pressure",
+      value: 76,
+      unit: "mmHg",
+      category: BodyPartCategory.cardiovascular,
+      bodyPart: "heart",
+    },
+    {
+      id: "haemoglobin",
+      label: "Haemoglobin",
+      value: 14.2,
+      unit: "g/dL",
+      category: BodyPartCategory.blood,
+      bodyPart: "blood",
+    },
+    {
+      id: "wbc",
+      label: "WBC",
+      value: 6.8,
+      unit: "×10³/µL",
+      category: BodyPartCategory.blood,
+      bodyPart: "blood",
+    },
+    {
+      id: "rbc",
+      label: "RBC",
+      value: 4.9,
+      unit: "×10⁶/µL",
+      category: BodyPartCategory.blood,
+      bodyPart: "blood",
+    },
+    {
+      id: "platelets",
+      label: "Platelets",
+      value: 230,
+      unit: "×10³/µL",
+      category: BodyPartCategory.blood,
+      bodyPart: "blood",
+    },
+    {
+      id: "creatinine",
+      label: "Creatinine",
+      value: 0.9,
+      unit: "mg/dL",
+      category: BodyPartCategory.renal,
+      bodyPart: "kidney",
+    },
+    {
+      id: "egfr",
+      label: "eGFR",
+      value: 95,
+      unit: "mL/min/1.73m²",
+      category: BodyPartCategory.renal,
+      bodyPart: "kidney",
+    },
+    {
+      id: "bun",
+      label: "BUN",
+      value: 14,
+      unit: "mg/dL",
+      category: BodyPartCategory.renal,
+      bodyPart: "kidney",
+    },
+  ],
+};
